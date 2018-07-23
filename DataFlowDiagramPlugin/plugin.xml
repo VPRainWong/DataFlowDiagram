@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.dfdplugin"
+		name="DFD plugin"
+		description="Sample plugin for generate dfd"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.dfdplugin.DfdPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.dfdplugin.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.dfdplugin.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.dfdplugin.actionset1.DFDActionControl"
+					actionType="generalAction"
+      		name="DFD plugin"
+		      description="Sample plugin for generate dfd"
+					style="normal"
+          icon="icon/plugin_icon.png"
+          tooltip="Data Flow Diagram"
+					toolbarPath="com.vp.plugin.sample.dfdplugin.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.dfdplugin.DFDAction"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
