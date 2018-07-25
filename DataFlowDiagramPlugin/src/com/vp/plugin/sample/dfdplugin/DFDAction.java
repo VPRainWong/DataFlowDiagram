@@ -30,8 +30,8 @@ public class DFDAction implements VPActionController {
 		//Create Order Food Process
 		IDFProcess orderFood = IModelElementFactory.instance().createDFProcess();
 		orderFood.setName("Order Food");
-		//Create the process shape on diagram
 		orderFood.setDfId("0.1");
+		//Create the process shape on diagram
 		IDFProcessUIModel shapeOrderFood = (IDFProcessUIModel) diagrammanager.createDiagramElement(dfd, orderFood);
 		shapeOrderFood.setBounds(450, 395, 100, 60);
 		
